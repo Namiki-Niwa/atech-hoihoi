@@ -18,17 +18,50 @@
 
     <header class="header">
       <div class="header__inner inner">
-        <h1 class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png" alt=""></h1>
+        <div class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png" alt=""></div>
         <nav class="header__nav">
-          <ol class="header__nav--list">
-            <li class="header__nav--item"><a href="#">Maroudo HoiHoiの特徴</a></li>
-            <li class="header__nav--item"><a href="#">⾼品質なCookieデータを活⽤</a></li>
-            <li class="header__nav--item"><a href="#">配信価格</a></li>
-            <li class="header__nav--item"><a href="#" class="btn btn-contact">お問い合わせ</a></li>
+          <ol class="header__nav-list">
+            <li class="header__nav-item"><a href="#">Maroudo HoiHoiの特徴</a></li>
+            <li class="header__nav-item"><a href="#">⾼品質なCookieデータを活⽤</a></li>
+            <li class="header__nav-item"><a href="#">配信価格</a></li>
+            <li class="header__nav-item"><a href="#" class="btn btn-contact">お問い合わせ</a></li>
           </ol>
         </nav>
       </div>
     </header>
+
+    <main class="main">
+      <div class="fv">
+        <div class="fv__inner inner">
+          <div class="fv__decoration">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/deco1.png" alt="" class="deco1">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/deco2.png" alt="" class="deco2">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/deco3.png" alt="" class="deco3">
+          </div>
+          <div class="fv__container">
+            <p class="fv__text">待つだけの広告はもうおさらばして<br>これからは攻めの広告に！</p>
+            <h1 class="fv__title"><span>メンズエステ</span>に<br><span>特化</span>した<span>広告</span>配信</h1>
+            <div class="fv__features">
+              <div class="fv__features-item">
+                <p class="fv__features-text">ポータルサイト<br>以外からの新しい<br>ユーザー動線を<br>確保</p>
+              </div>
+              <div class="fv__features-item">
+                <p class="fv__features-text">メンエスユーザーに<br>限定した誘導が<br>可能</p>
+              </div>
+              <div class="fv__features-item">
+                <p class="fv__features-text">集客/求人<br>どちらにも<br>ターゲットが<br>可能</p>
+              </div>
+              <div class="fv__features-item">
+                <p class="fv__features-text">日常生活での<br>サイト閲覧中に<br>リーチができ<br>認知が早い</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+
 
   </div>
 </body>

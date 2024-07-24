@@ -1,3 +1,8 @@
+// 変数定義
+$header-height: 100px;
+$main-color:#133979;
+$accent-color:#DC692A;
+
 // 共有スタイル
 .inner {
   margin: 0 auto;
@@ -6,15 +11,32 @@
 .btn {
 
 }
+* {
+  box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
+}
 
 
 // ----------------------------------
+.wrapper {
+  
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  // opacity: 0.3 ;
+  height: 100px;
+  background: rgba(255,255, 255, 0.9);
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header {}
 
 .header__logo {
   img {
@@ -24,12 +46,12 @@
 }
 .header__nav {}
 
-.header__nav--list {
+.header__nav-list {
   display: flex;
   gap: 30px;
 }
 
-.header__nav--item {
+.header__nav-item {
   a {
     font-size: 12px;
     font-weight: bold;
@@ -42,3 +64,87 @@
   padding-block: 15px;
   border-radius: 5px;
 }
+
+
+// main--------------------------------
+.fv__inner {
+  // padding-inline: 50px;
+}
+
+.fv__decoration {
+  position: relative;
+  .deco1 {
+    position: absolute;
+    z-index: 1;
+    top: -110px;
+    left: 300px;
+    max-width: 300px;
+    width: 100%;
+  }
+  .deco2 {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 400px;
+    max-width: 700px;
+    width: 100%;
+  }
+  .deco3 {
+    position: absolute;
+    z-index: 1;
+    top: 550px;
+    left: -90px;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+.fv__container {
+  padding-top: $header-height;
+}
+.fv__text {
+  margin-top: 110px;
+  font-size: 30px;
+  color: $main-color;
+  font-weight: bold;
+  line-height: 1.7;
+}
+.fv__title {
+  margin-top: 35px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $main-color;
+
+  span {
+    color: $accent-color;
+  }
+}
+.fv__features {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+  margin-top: 85px;
+  margin-bottom: 50px;
+}
+
+.fv__features-item {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $main-color;
+}
+
+.fv__features-text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+
+}
+// --------------------------------

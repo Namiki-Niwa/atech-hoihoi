@@ -3,6 +3,21 @@
   margin-inline: 40px;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,14 +35,14 @@
   width: 100%;
 }
 
-.header__nav--list {
+.header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-.header__nav--item a {
+.header__nav-item a {
   font-size: 12px;
   font-weight: bold;
 }
@@ -38,4 +53,91 @@
   padding-inline: 30px;
   padding-block: 15px;
   border-radius: 5px;
+}
+
+.fv__decoration {
+  position: relative;
+}
+.fv__decoration .deco1 {
+  position: absolute;
+  z-index: 1;
+  top: -110px;
+  left: 300px;
+  max-width: 300px;
+  width: 100%;
+}
+.fv__decoration .deco2 {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 400px;
+  max-width: 700px;
+  width: 100%;
+}
+.fv__decoration .deco3 {
+  position: absolute;
+  z-index: 1;
+  top: 550px;
+  left: -90px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.fv__container {
+  padding-top: 100px;
+}
+
+.fv__text {
+  margin-top: 110px;
+  font-size: 30px;
+  color: #133979;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+.fv__title {
+  margin-top: 35px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #133979;
+}
+.fv__title span {
+  color: #DC692A;
+}
+
+.fv__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+  margin-top: 85px;
+  margin-bottom: 50px;
+}
+
+.fv__features-item {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #133979;
+}
+
+.fv__features-text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
 }
