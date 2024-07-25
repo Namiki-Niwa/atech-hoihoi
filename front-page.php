@@ -56,9 +56,24 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
+
+      <section class="feature">
+        <div class="title__wrapper">
+          <h2 class="section__title">Maroudo HoiHoiの<br>特徴</h2>
+          <p class="title__text">
+            800億imp/⽉・1億UUを保有する、SSPを直接買い付けることにより<br>
+            ⾼品質なオーディエンスに低価格での配信を実現。
+          </p>
+        </div>
+        <div class="feature__content">
+          <div class="feature__item">
+
+          </div>
+        </div>
+
+      </section>
     </main>
 
 
