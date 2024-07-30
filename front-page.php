@@ -108,7 +108,7 @@
         </dl>
         <dl class="segment__description">
           <dt>年代別</dt>
-          <dd>20代/30代/40代/50代/60代以上</dd>
+          <dd>20代／30代／40代／50代／60代以上</dd>
         </dl>
         <dl class="segment__description">
           <dt>エリア</dt>
@@ -126,10 +126,115 @@
           <dt>OC/キャリア</dt>
           <dd>PC/iOS/Android</dd>
         </dl>
-        <p class="segment__text">※デフォルトのセグメントは性別のみとなります</p>
-        <p class="segment__text">※セグメントを追加・変更する場合は、配信数の保証対象外になる場合があります</p>
+        <div class="segment__text-wrapper">
+          <p class="segment__text">※デフォルトのセグメントは性別のみとなります</p>
+          <p class="segment__text">※セグメントを追加・変更する場合は、配信数の保証対象外になる場合があります</p>
+        </div>
       </div>
     </section>
+
+    <section class="section__price">
+      <div class="section__price-inner inner">
+        <div class="section__title-wrapper">
+          <h2 class="section__title">配信価格</h2>
+        </div>
+        <p class="price__duedate">2022/07/01~2022/09/30入稿分まで</p>
+        <div class="price__container">
+          <div class="price__montly">
+            <h3 class="price__subtitle">最低出稿金額（月額）</h3>
+            <div class="price__details-wrapper">
+              <dl class="price__details">
+                <dt>集客のみ</dt>
+                <dd>33,000円〜（16,500円〜）</dd>
+              </dl>
+              <dl class="price__details">
+                <dt>求人のみ</dt>
+                <dd>33,000円〜（16,500円〜）</dd>
+              </dl>
+              <dl class="price__details">
+                <dt>集客・求人</dt>
+                <dd>55,000円〜（27,500円〜）</dd>
+              </dl>
+            </div>
+            <p class="price-details__warning">※2ヶ月上の申し込みが必要</p>
+            <div class="price-details__line"></div>
+            <p class="price-details__text">最低1000件/月以上の誘導を保証</p>
+          </div>
+          <div class="price__included price-included">
+            <p class="price-included__title">出稿費用に含まれるもの</p>
+            <ol class="price-included__lists">
+              <li class="price-included__item">配信費用</li>
+              <li class="price-included__item">バナー作成</li>
+              <li class="price-included__item">レポート費用（2ヶ月ごと）</li>
+            </ol>
+            <p class="price-included__warning">※価格は今後変更になる場合があります</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__regulation">
+      <div class="section__regulation-inner inner">
+        <div class="section__title-wrapper">
+          <h2 class="section__title">バナー入稿規定</h2>
+        </div>
+        <div class="regulation__wrapper">
+          <table class="regulation__table">
+            <tr>
+              <th>バナー種類</th>
+              <td>レクタングル<br>(ダブルサイズ)</td>
+            </tr>
+            <tr>
+              <th>上下サイズ（pixel）</th>
+              <td>600</td>
+            </tr>
+            <tr>
+              <th>上下サイズ</th>
+              <td>500</td>
+            </tr>
+            <tr>
+              <th>容量</th>
+              <td>200KB未満</td>
+            </tr>
+            <tr>
+              <th>クリエイティブ形式</th>
+              <td>＜入稿形式＞<br>・JPEG・GIFアニメーション<br>（無限ループ可能）<br>
+                ・1pixcel以上の境界線必須（黒色推奨）<br>
+                ・広告主名（店舗名）必須
+              </td>
+            </tr>
+          </table>
+          <table class="regulation__table">
+            <tr>
+              <th>ALTテキスト</th>
+              <td>不可</td>
+            </tr>
+            <tr>
+              <th>同時掲載数</th>
+              <td>2クリエイティブまで</td>
+            </tr>
+            <tr>
+              <th>入稿</th>
+              <td>入稿確定後（メールにてご連絡）7行目を<br>目安に配信開始します。</td>
+            </tr>
+            <tr>
+              <th>原稿差し替え</th>
+              <td>15時までの入稿の場合は6営業日以内の差し替え。<br>
+                15時までの入稿の場合は6営業日以内の差し替え。
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="regulation__text-wrapper">
+          <p class="regulation__text">※クリエイティブやランディングページの内容によって、媒体側で掲載のお断りをすることがございます。</p>
+          <p class="regulation__text">※配信先毎のクリエイティブ指定、URL指定については対応をしかねますので、あらかじめご了承ください。</p>
+          <p class="regulation__text">※配信にあたっては、「広告掲載規定」を順守していることが前提となります。</p>
+          <p class="regulation__text">※クリエイティブの修正や制作は別途費⽤となります。</p>
+        </div>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/menu111.png" alt="" class="regulation__img">
+      </div>
+    </section>
+
   </main>
   </body>
 

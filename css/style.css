@@ -337,11 +337,14 @@
 .section__segment {
   margin-top: 100px;
   background-color: #E0F5FF;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
 }
 
 .section__segment-inner {
   background-color: white;
+  width: 900px;
+  padding-block: 50px;
+  border-radius: 15px;
 }
 
 .segment__description {
@@ -353,7 +356,12 @@
           justify-content: start;
   width: 500px;
   margin-inline: auto;
-  margin-bottom: 10px;
+}
+.segment__description:first-of-type {
+  margin-top: 50px;
+}
+.segment__description:not(:last-of-type) {
+  margin-bottom: 20px;
 }
 .segment__description dt {
   -webkit-box-flex: 1;
@@ -377,6 +385,202 @@
   line-height: 30px;
 }
 
+.segment__text-wrapper {
+  margin-top: 20px;
+}
+
 .segment__text {
+  width: 85%;
+  margin-inline: auto;
+  text-align: left;
   font-weight: bold;
+  font-size: 13px;
+}
+.segment__text + .segment__text {
+  margin-top: 10px;
+}
+
+.section__price {
+  background-color: #E0F5FF;
+  padding-block: 70px;
+}
+
+.price__duedate {
+  margin-inline: auto;
+  font-weight: bold;
+  font-size: 14px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: white;
+  margin-top: 30px;
+  padding: 13px;
+}
+
+.price__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.price__montly {
+  max-width: 350px;
+  width: 100%;
+}
+
+.price__subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  color: #133979;
+}
+
+.price__details-wrapper {
+  margin-top: 30px;
+}
+
+.price__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.price__details:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+.price__details dt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  font-weight: bold;
+  color: #133979;
+}
+.price__details dd {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.price-details__warning {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.price-details__line {
+  width: 350px;
+  height: 2px;
+  background-color: white;
+  margin-block: 10px;
+}
+
+.price-details__text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #133979;
+}
+
+.price__included {
+  background-color: white;
+  padding: 30px 60px;
+}
+
+.price-included__title {
+  color: #133979;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.price-included__lists {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-top: 20px;
+}
+
+.price-included__item {
+  font-weight: bold;
+  font-size: 14px;
+}
+.price-included__item:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.price-included__warning {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.section__regulation {
+  padding-block: 50px;
+}
+
+.regulation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.regulation__table {
+  border: 1px solid;
+  max-width: 50%;
+}
+.regulation__table th {
+  border: 1px solid;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #133979;
+  background-color: #E0F5FF;
+  text-align: center;
+  padding: 20px 0;
+  width: 190px;
+}
+.regulation__table td {
+  border: 1px solid;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #133979;
+  padding-left: 10px;
+  line-height: 1.7;
+  max-width: 350px;
+}
+
+.regulation__text-wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 50px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.regulation__text {
+  font-size: 13px;
+  font-weight: bold;
+}
+.regulation__text:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.regulation__img {
+  display: block;
+  margin-top: 50px;
+  margin-inline: auto;
+  max-width: 750px;
+  width: 100%;
 }
