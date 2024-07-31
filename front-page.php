@@ -232,10 +232,21 @@
           <p class="regulation__text">※クリエイティブの修正や制作は別途費⽤となります。</p>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/images/menu111.png" alt="" class="regulation__img">
+        <div class="add-regulation">
+          <p class="add-regulation__text">広告掲載規定</p>
+          <button class="add-regulation__btn">▼</button>
+        </div>
       </div>
     </section>
 
   </main>
+
+  <footer class="footer"></footer>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+  <?php wp_footer(); ?>
   </body>
 
   </html>
