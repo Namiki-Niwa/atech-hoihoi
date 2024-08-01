@@ -234,7 +234,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/menu111.png" alt="" class="regulation__img">
         <div class="add-regulation">
           <p class="add-regulation__text">広告掲載規定</p>
-          <button class="add-regulation__btn">▼</button>
+          <button id="btn" class="add-regulation__btn">▼</button>
         </div>
       </div>
     </section>
@@ -245,7 +245,7 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="<?php get_stylesheet_directory_uri(); ?>/js/index.js"></script>
   <?php wp_footer(); ?>
   </body>
 

@@ -5,6 +5,6 @@ add_action( 'wp_enqueue_scripts', function(){
 wp_deregister_script( 'jquery' );
 
 <!-- // 好きなjQueryを読み込み -->
-wp_enqueue_script( 'my_jquery', '読み込むjQueryのパス', );
+wp_enqueue_script( 'my_jquery', get_template_directory_uri() . '/js/index.js', );
 
 } );
