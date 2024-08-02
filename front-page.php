@@ -235,17 +235,17 @@
         <div class="add-regulation">
           <button id="modal-open" class="add-regulation__btn">広告掲載規定</button>
         </div>
-        <!-- <div id="modal-bg" class="modal__bg"></div> -->
+
         <!-- モーダル本体 -->
         <div id="modal-container" class="modal__container">
-          <div class="modal__body">
-            <!-- 閉じるボタン -->
-            <div class="modal__close">×</div>
-            <!-- モーダル内のコンテンツ -->
-            <div class="modal__content">
-              <p class="modal__title">広告掲載規定</p>
-              <p>1. 弊社は、「全社広告掲載基本⽅針」・「全社広告掲載基準」に基づいた広告を掲載させていただいております。</p>
-              <span>
+          <div class="modal__content modal-content">
+            <div class="modal-content__head">
+              <p class="modal-content__title">広告掲載規定</p>
+              <button id="modal-close" class="modal__close">×</button>
+            </div>
+            <div class="modal-content__body">
+              <p class="modal-content__text1">1. 弊社は、「全社広告掲載基本⽅針」・「全社広告掲載基準」に基づいた広告を掲載させていただいております。</p>
+              <span class="modal-content__text-main">
                 ・全社広告掲載基本⽅針<br>
                 当社の媒体に掲載する広告は、以下の⽅針に従うものとする。<br>
                 １. 社会の信頼に応え、真実を伝えるものとする。<br>

@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  overflow: hidden;
-}
-
 .inner {
   max-width: 1380px;
   margin-inline: auto;
@@ -633,48 +629,16 @@ body {
   background: rgba(0, 0, 0, 0.5);
   padding: 40px 50px;
   overflow: auto;
+  opacity: 0;
+  visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.modal__container:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
 .modal__container.is-active {
   opacity: 1;
   visibility: visible;
-}
-
-.modal__body {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 500px;
-  width: 90%;
-}
-
-.modal__close {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: -40px;
-  right: -40px;
-  width: 40px;
-  height: 40px;
-  font-size: 40px;
-  color: #fff;
-  cursor: pointer;
 }
 
 .modal__content {
@@ -686,15 +650,55 @@ body {
   z-index: 100;
   width: 70%;
   height: 65%;
-  background: #fff;
+  background: white;
+  border: 4px solid #E0F5FF;
+  border-radius: 10px;
   text-align: left;
   padding: 30px;
   overflow-y: scroll;
 }
 
-.modal__title {
+.modal-content__title {
+  position: relative;
+  color: #133979;
   font-size: 20px;
-  color: blue;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
+}
+
+.modal__close {
+  position: absolute;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+}
+
+.modal-content__body {
+  overflow-y: scroll;
+}
+
+.modal-content__text1 {
+  margin-top: 20px;
+}
+
+.modal-content__text-main {
+  display: block;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.6;
 }
