@@ -283,13 +283,20 @@
       </div>
     </section>
 
-
+    <section class="section__contact">
+      <div class="contact__inner inner">
+        <?php echo apply_shortcodes('[contact-form-7 id="89d5c73" title="お問い合わせ"]'); ?>
+      </div>
+    </section>
 
   </main>
 
-  <footer class="footer"></footer>
-
-
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png" alt="">
+    </div>
+    <p class="copyright">&copy;2022 MAROUDO HoiHoi All RrightsReserved</p>
+  </footer>
   <?php wp_footer(); ?>
   </body>
 

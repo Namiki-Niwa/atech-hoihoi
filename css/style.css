@@ -702,3 +702,23 @@
   font-size: 15px;
   line-height: 1.6;
 }
+
+.footer {
+  padding-block: 20px;
+}
+
+.footer__logo {
+  text-align: center;
+}
+.footer__logo img {
+  max-width: 250px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
