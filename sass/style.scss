@@ -621,7 +621,6 @@ body {
   border-radius: 10px;
 	text-align: left;
 	padding: 30px;
-  overflow-y: scroll;
 }
 .modal-content__title {
   position: relative;
@@ -647,6 +646,7 @@ body {
 }
 
 .modal-content__body {
+  height: 90%;
   overflow-y: scroll;
 }
 
