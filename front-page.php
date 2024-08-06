@@ -285,10 +285,14 @@
 
     <section class="section__contact">
       <div class="contact__inner inner">
-        <?php echo apply_shortcodes('[contact-form-7 id="89d5c73" title="お問い合わせ"]'); ?>
+        <div class="section__title-wrapper">
+          <h2 class="section__title">お問い合わせ</h2>
+        </div>
+        <div class="contact__form">
+          <?php echo apply_shortcodes('[contact-form-7 id="89d5c73" title="お問い合わせ"]'); ?>
+        </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
